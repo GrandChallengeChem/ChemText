@@ -31,6 +31,12 @@ li a:hover:not(.active) {
     color: black;
 }
 
+.container  {
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px;
+}
+   
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
