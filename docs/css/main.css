@@ -30,13 +30,13 @@ li a:hover:not(.active) {
     color: black;
 }
 
-.container  {
+.main_text  {
     margin-left:10%;
     padding:1px 16px;
     height:1000px;
 }
    
-h1 {
+.home_header1, home_header2 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -57,4 +57,18 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+
+/* images1 style */
+.images1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
