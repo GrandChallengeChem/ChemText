@@ -73,3 +73,19 @@ footer {
 * {
     box-sizing: border-box;
 }
+
+/*Link style*/
+a.footlink {
+	color: #ff9999;
+	text-decoration: none;
+}
+
+a.footlink:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+a.footlink:visited {
+	color: pink;
+	text-decoration: none;
+}
