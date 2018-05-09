@@ -37,7 +37,13 @@ li a:hover:not(.active) {
     margin-right: 20%;
     padding:1px 16px;
 }
-   
+
+@media screen and (max-width: 600px) {
+    .main_text  {
+    margin-right: 0%;
+    }
+}
+    
 .home_header1, home_header2 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
