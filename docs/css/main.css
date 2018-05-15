@@ -96,7 +96,7 @@ a.footlink:visited {
 	text-decoration: none;
 }
 
-/* Three Level Image Overlay*/
+/* Three Level Image Overlay
 .overlay1, .overlay2, .overlay3 {
   position: absolute;
   top: 0;
@@ -123,3 +123,4 @@ a.footlink:visited {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+*/
