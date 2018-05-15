@@ -96,8 +96,8 @@ a.footlink:visited {
 	text-decoration: none;
 }
 
-/* Three Level Image Overlay
-.overlay1, .overlay2, .overlay3 {
+/* Three Level Image Overlay */
+.overlay1 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -110,11 +110,11 @@ a.footlink:visited {
   background-color: #008CBA;
 }
 
-.column2:hover .overlay1, .overlay2, .overlay3 {
+.column2:hover .overlay1{
   opacity: 1;
 }
 
-.text1, .text2, .text3 {
+.text1 {
   color: white;
   font-size: 1.4em;
   position: absolute;
@@ -123,4 +123,3 @@ a.footlink:visited {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-*/
