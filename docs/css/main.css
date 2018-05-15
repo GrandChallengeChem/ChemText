@@ -95,3 +95,31 @@ a.footlink:visited {
 	color: pink;
 	text-decoration: none;
 }
+
+/* Three Level Image Overlay*/
+.overlay1, .overlay2, .overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.column2:hover .overlay1, .overlay2, .overlay3 {
+  opacity: 1;
+}
+
+.text1, .text2, .text3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
