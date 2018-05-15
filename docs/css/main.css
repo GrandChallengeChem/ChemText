@@ -76,10 +76,10 @@ footer {
     clear: both;
     display: table;
 }
-* {
+/** {
     box-sizing: border-box;
 }
-
+*/
 /*Link style*/
 a.footlink {
 	color: #ff9999;
