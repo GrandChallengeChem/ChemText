@@ -61,7 +61,8 @@ footer {
 /* images1 style */
 .column1 {
     float: left;
-    height: 15em;
+    /*height: 15em;*/
+		width: 25%;
     padding: 8px;
 }
 
@@ -69,7 +70,7 @@ footer {
     float: left;
     width: 33.33%;
     padding: 0px;
-	position: relative;
+	  position: relative;
 }
 
 .row::after {
