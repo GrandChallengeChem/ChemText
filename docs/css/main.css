@@ -32,6 +32,26 @@ li a:hover:not(.active) {
     color: black;
 }
 
+@media screen and (max-width: 900px) {
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    li a {
+        float: left;
+        padding: 15px;
+    }
+    .main_text {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    li a {
+        text-align: center;
+        float: none;
+    }
+}
+
 .main_text  {
     margin-left:10%;
     margin-right: 20%;
