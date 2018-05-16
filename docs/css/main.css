@@ -60,11 +60,11 @@ footer {
 
 /* images1 style */
 .column1 {
-    float: left;
+    /*float: left;*/
     /*height: 15em;*/
-		width: 25%;
+		flex: 25%;
     padding: 8px;
-	  max-width: 400px;
+	  /*max-width: 400px;*/
 }
 
 .column2 {
@@ -74,10 +74,8 @@ footer {
 	  position: relative;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.row {
+    display: flex;
 }
 /** {
     box-sizing: border-box;
