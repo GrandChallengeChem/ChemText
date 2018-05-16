@@ -67,6 +67,12 @@ footer {
 	  /*max-width: 400px;*/
 }
 
+@media screen and (max-width: 600px) {
+    .column1  {
+      flex: 50%;
+			padding: 5px;
+    }
+}
 .column2 {
     float: left;
     width: 33.33%;
