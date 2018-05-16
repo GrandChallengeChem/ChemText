@@ -69,6 +69,7 @@ footer {
     float: left;
     width: 33.33%;
     padding: 0px;
+	position: relative;
 }
 
 .row::after {
@@ -97,7 +98,7 @@ a.footlink:visited {
 }
 
 /* Three Level Image Overlay */
-.overlay1 {
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -110,11 +111,11 @@ a.footlink:visited {
   background-color: #008CBA;
 }
 
-.column2:hover .overlay1{
+.column2:hover .overlay{
   opacity: 1;
 }
 
-.text1 {
+.text {
   color: white;
   font-size: 1.4em;
   position: absolute;
