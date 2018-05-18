@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 ul {
     list-style-type: none;
     margin: auto;
@@ -103,10 +107,7 @@ footer {
 .row {
     display: flex;
 }
-/** {
-    box-sizing: border-box;
-}
-*/
+
 /*Link style*/
 a.footlink {
 	color: #ff9999;
