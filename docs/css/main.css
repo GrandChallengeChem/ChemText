@@ -89,6 +89,7 @@ footer {
 
 .column1 img {
   max-height: 265px;
+  max-width: 400px;
 }
 
 .column2 {
