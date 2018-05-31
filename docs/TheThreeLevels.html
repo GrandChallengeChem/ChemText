@@ -28,40 +28,61 @@
 	<body>
 	
 		<!-- The menu on the left -->
-		<ul>
-			<li><a href="index.html">Home</a></li>
-	   	<li><a href="WhyGrandChallenges.html">Why Grand Challenges</a></li>
-			<li><a class="active"  href="TheThreeLevels.html">The Three Levels</a></li>
-      <li><a href="/blog">Tabx</a></li>
-		</ul>
+    <div class="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="WhyGrandChallenges.html">Why Grand Challenges</a></li>
+        <li><a class="active" href="TheThreeLevels.html">The Three Levels</a></li>
+        <li><a href="/blog">Tabx</a></li>
+      </ul>
+    </div>
 		
 
 		<!-- Main content -->
 		<div class="main_text">
       <div class="home_header1">
-        <h1 style="font-size: 1.7em;">The Three Levels</h1>
+        <h1 style="font-size: 1.9em;">The Three Levels</h1>
 		  </div><!-- /.home_header1 -->
 					
 			<div class="row">  
+
         <div class="column2">
-			    <img src="images/ENERGY1.svg" alt="Icon" style="width:100%">
-					<div class="overlay">
-    				<div class="text">Energy</div>
-  				</div>
+          <div class="dropdown">
+            <img src="images/ENERGY1.svg" onclick="myFunction()" class="dropbtn" alt="Icon" style="width:100%">
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Energy1"><img src="images/diff1.svg" alt="Difficulty1" style="width:100%"></a>
+              <a href="Energy1"><img src="images/diff2.svg" alt="Difficulty2" style="width:100%"></a>
+              <a href="Energy1"><img src="images/diff3.svg" alt="Difficulty3" style="width:100%"></a>
+            </div>
+          </div>
         </div><!-- /.column2 -->
 				
 				<div class="column2">
-			    <img src="images/ENERGY1.svg" alt="Icon" style="width:100%">
-        	<div class="overlay">
+          <div class="dropdown">
+
+          <img src="images/HEALTH1.svg" onclick="myFunction()" class="dropbtn" alt="Icon" style="width:100%">
+          <div id="myDropdown" class="dropdown-content">
+              <a href="Energy1"><img src="images/diff1.svg" alt="Difficulty1" style="width:100%"></a>
+              <a href="Energy1"><img src="images/diff2.svg" alt="Difficulty2" style="width:100%"></a>
+              <a href="Energy1"><img src="images/diff3.svg" alt="Difficulty3" style="width:100%"></a>
+            </div>
+          </div>
+        	<!--
+          <div class="overlay">
     				<div class="text">Human Health</div>
-  				</div>
+  				</div>-->
 				</div><!-- /.column2 -->
 				
 				<div class="column2">
-			    <img src="images/ENERGY1.svg" alt="Icon" style="width:100%">
-        	<div class="overlay">
-    				<div class="text">Space Colonization</div>
-  				</div>
+          <div class="dropdown">
+
+          <img src="images/SPACE1.svg" onclick="myFunction()" class="dropbtn" alt="Icon" style="width:100%">
+          <div id="myDropdown" class="dropdown-content">
+              <a href="Energy1"><img src="images/diff1.svg" alt="Difficulty1" style="width:100%"></a>
+              <a href="Energy1"><img src="images/diff2.svg" alt="Difficulty2" style="width:100%"></a>
+              <a href="Energy1"><img src="images/diff3.svg" alt="Difficulty3" style="width:100%"></a>
+            </div>
+          </div>
 				</div><!-- /.column2 -->
 				
       </div><!-- /.row -->
