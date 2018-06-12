@@ -32,3 +32,14 @@ window.onclick = function(event) {
     }
   }
 }
+
+// Side nav open and
+function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("push").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("push").style.marginLeft = "0";
+}
