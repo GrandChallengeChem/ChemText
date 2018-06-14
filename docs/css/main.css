@@ -43,7 +43,7 @@ body {
 	left: 0;
 	background-color: #19396d;
 	overflow-x: hidden;
-	padding-top: 30px;
+	padding-top: 0px;
 	transition: 0.5s;
 }
 
@@ -67,6 +67,45 @@ body {
 	left: 0;
 	padding-left: 7px;
 	font-size: 40px;
+}
+
+.sidetool {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #19396d;
+	overflow-x: hidden;
+	padding-top: 30px;
+	transition: 0.5s;
+}
+
+.sidetool a {
+	display: block;
+	padding: 0px 0px 50px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #e2e2e2;
+	transition: 0.3s;
+}
+
+.sidetool .close_button2 {
+	position: absolute;
+	color: #ffffff;
+	top: 0;
+	left: 0;
+	padding-left: 7px;
+	font-size: 40px;
+}
+
+.menu_buttons {
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	top: 0px;
+	position: sticky;
 }
 
 #push {
