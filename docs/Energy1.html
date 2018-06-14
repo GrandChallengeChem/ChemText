@@ -14,6 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="jQuery/jquery.js"></script>
 
+    <!-- Linking Icon Library Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- metadata -->
     <meta charset="UTF-8">
@@ -31,7 +33,6 @@
 
   <div class="sidenav" id="sidenav">
     <ol>
-      <a href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
       <li><a href="">Atoms</a></li>
       <li><a href="">Molecules</a></li>
       <li><a href="">Reactions</a></li>
@@ -41,11 +42,21 @@
     </ol>
   </div>
 
+  <div class="sidetool" id="sidetool">
+    <a href=""><i style="font-size:24px" class="fa">&#xf278;</i></a>
+    <a href=""><i style="font-size:24px" class="fa">&#xf278;</i></a>
+    <a href=""><i style="font-size:24px" class="fa">&#xf278;</i></a>
 
+
+  </div>
 
 
   <div id="push">
-    <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776;</span>
+    <div class="menu_buttons">
+      <span style="font-size:35px;cursor:pointer;float: left;" onclick="openNav()">&#9776;</span>
+      <span style="font-size:35px;cursor:pointer;float: right;" onclick="openTool()">&#9776;</span>
+    </div>
+
 
     <div class="topnav">
       <ul>
