@@ -33,7 +33,8 @@ window.onclick = function(event) {
   }
 }
 
-// Side nav open and
+/* First version on open/close function, which is obsolesced by openNav and openTool below
+// Side nav open and close button functions
 function openNav() {
     document.getElementById("sidenav").style.width = "250px";
     document.getElementById("push").style.marginLeft = "250px";
@@ -42,4 +43,40 @@ function openNav() {
 function closeNav() {
     document.getElementById("sidenav").style.width = "0";
     document.getElementById("push").style.marginLeft = "0";
+}
+
+// Side Tool open and close button functions
+function openNav2() {
+    document.getElementById("sidetool").style.width = "100px";
+    document.getElementById("push").style.marginRight = "100px";
+}
+
+function closeNav2() {
+    document.getElementById("sidetool").style.width = "0";
+    document.getElementById("push").style.marginRight = "0";
+}
+*/
+
+function openNav() {
+  var x = document.getElementById("sidenav").style.width;
+  if (x != "250px") {
+    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("push").style.marginLeft = "250px";
+  }
+  else {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("push").style.marginLeft = "0";
+  }
+}
+
+function openTool() {
+  var x = document.getElementById("sidetool").style.width;
+  if (x != "60px") {
+    document.getElementById("sidetool").style.width = "60px";
+    document.getElementById("push").style.marginRight = "60px";
+  }
+  else {
+    document.getElementById("sidetool").style.width = "0";
+    document.getElementById("push").style.marginRight = "0";
+  }
 }
