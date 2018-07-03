@@ -23,9 +23,15 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: #db7400;
-	border-radius: 20px;
+	border-radius: 3px;
 	display: inline;
+	transition: 0.4s;
 }
+
+.topnav li:hover {
+	background-color: #b7b7b7;
+}
+
 
 .topnav li a {
 	text-decoration: none;
@@ -69,7 +75,7 @@ body {
 	display: block;
 	padding: 9px 9px 9px 32px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 17px;
 	color: #e2e2e2;
 	transition: 0.3s;
 }
@@ -96,13 +102,13 @@ body {
 	right: 0;
 	background-color: #333;
 	overflow-x: hidden;
-	padding-top: 30px;
+	padding-top: 35px;
 	transition: 0.5s;
 }
 
-.sidetool a {
+.sidetool i {
 	display: block;
-	padding: 0px 0px 50px 15px;
+	padding: 0px 0px 30px 15px;
 	text-decoration: none;
 	font-size: 20px;
 	color: #e2e2e2;
@@ -136,13 +142,13 @@ body {
 
 		display: block;
 	}
-	.main_text {
+	.main_text2 {
 		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: 400px) {
-  .main_text {
+  .main_text2 {
 	margin-right: 0%;
   margin-left: 0%;
   }
@@ -159,7 +165,7 @@ body {
 
 /*Main Text Styles*/
 .home_header1 {
-	padding: 80px;
+	padding-top: 80px;
 	text-align: center;
 }
 
