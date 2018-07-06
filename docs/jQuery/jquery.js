@@ -7,6 +7,17 @@ $(document).ready(function(){
   });
 });
 
+
+$(document).ready(function(){
+  
+  $( "#prdtbl" ).tooltip({
+    items: "span#prdtbl",
+    content: "Periodic Table",
+    track: true
+  });
+});
+
+
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
 }
