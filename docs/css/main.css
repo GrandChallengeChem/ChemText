@@ -242,6 +242,9 @@ footer {
 	display: flex;
 	text-align: center;
 	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	max-width: 1000px;
 }
 
 .column3 {

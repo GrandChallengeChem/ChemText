@@ -18,6 +18,25 @@ $(document).ready(function(){
 });
 
 
+function modalfunc() {
+  document.getElementById('modal01').style.display='block';
+}
+
+
+
+$(document).ready(function(){
+    $(document).keydown(function(event){ 
+        if(event.which == 80){
+          if(document.getElementById('modal01').style.display == "none"){
+            modalfunc();
+          } else {
+            document.getElementById('modal01').style.display="none";
+          }
+        }
+    });
+});
+
+
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
 }
