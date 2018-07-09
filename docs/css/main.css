@@ -400,3 +400,16 @@ a.footlink:visited {
   opacity: 1;
   right: 0;
 }
+
+/* Previous Next Page Buttons*/
+.page-buttons a {
+	background-color: #db7400;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border-radius: 4px;
+}
+
+.page-buttons a:hover {
+	background-color: #b7b7b7;
+}

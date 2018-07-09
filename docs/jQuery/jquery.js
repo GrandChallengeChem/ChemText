@@ -1,3 +1,5 @@
+/** Function that displays a tooltip with content of "content:" below the text wrapped by <span> of id hmsp
+**/
 $(document).ready(function(){
   
   $( "#hmsp" ).tooltip({
@@ -8,6 +10,9 @@ $(document).ready(function(){
 });
 
 
+/**
+*Function displaying the tooltip when cursor is hovered over the icon
+**/
 $(document).ready(function(){
   
   $( "#prdtbl" ).tooltip({
@@ -17,13 +22,18 @@ $(document).ready(function(){
   });
 });
 
-
+/**
+*Function that sets the periodic table image to 'block'
+**/
 function modalfunc() {
   document.getElementById('modal01').style.display='block';
 }
 
+/** KEYBOARD SHORTCUTS**/
 
-
+/**
+*Keyboard shortcut for 'p' to display or remove periodic table
+**/
 $(document).ready(function(){
     $(document).keydown(function(event){ 
         if(event.which == 80){
@@ -36,6 +46,29 @@ $(document).ready(function(){
     });
 });
 
+/**
+*Keyboard shortcut for LeftArrowKey to trigger previous page button
+**/
+$(document).ready(function(){
+    $(document).keydown(function(event){ 
+        if(event.which == 37){
+          var a = document.getElementById('previous').href;
+          document.location.href = a;
+        }
+    });
+});
+
+/**
+*Keyboard shortcut for RightArrowKey to trigger next page button
+**/
+$(document).ready(function(){
+    $(document).keydown(function(event){ 
+        if(event.which == 39){
+          var a = document.getElementById('next').href;
+          document.location.href = a;
+        }
+    });
+});
 
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
