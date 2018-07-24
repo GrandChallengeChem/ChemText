@@ -70,6 +70,11 @@ $(document).ready(function(){
     });
 });
 
+
+function dropfunc() {
+    document.getElementById("content1").classList.toggle("show");
+}
+
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
 }

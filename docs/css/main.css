@@ -1,6 +1,9 @@
-body {
+body p{
 	margin: 0;
-	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Times New Roman", Times, serif;
+    text-indent: 50px;
+    padding-top: 15px;
+    font-size: large;
 }
 * {
 	box-sizing: border-box;
@@ -57,6 +60,11 @@ body {
 }
 
 /* Side Navigation Menu Style*/
+.content1menu {
+	display: none;
+	position: relative;
+}
+
 
 .sidenav {
 	height: 100%;
