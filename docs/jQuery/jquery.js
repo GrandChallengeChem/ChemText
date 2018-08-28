@@ -70,6 +70,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function () {
+    
+    $("#sidenav li").on('click', function(e){
+       $(this).siblings('ul').toggle('show');
+    });
+  
+});
 
 function dropfunc() {
     document.getElementById("content1").classList.toggle("show");

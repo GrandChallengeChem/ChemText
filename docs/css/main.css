@@ -1,15 +1,33 @@
-body p{
-	margin: 0;
-    font-family: "Times New Roman", Times, serif;
-    text-indent: 50px;
-    padding-top: 15px;
-    font-size: large;
+body {
+  font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+}
+
+a[href], a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a img {
+  border: 0;
 }
 * {
 	box-sizing: border-box;
 }
 
 
+.sidenav button {
+	background: none!important;
+	color: inherit;
+	border: none;
+	cursor: pointer;
+
+}
+
+.sub_menu {
+	display: none;
+}
 /* Top Navigation Menu Style */
 .topnav {
 	background-color: #333;
@@ -79,7 +97,7 @@ body p{
 	transition: 0.5s;
 }
 
-.sidenav a, ol {
+.sidenav a, .sidenav ol , .sidenav button{
 	display: block;
 	padding: 9px 9px 9px 32px;
 	text-decoration: none;
@@ -163,7 +181,7 @@ body p{
 #push {
 	transition: 0.5s;
 }
-/*Media Query*/
+/* Outdated Media Query
 @media screen and (max-width: 960px) {
 
 	.topnav li {
@@ -188,13 +206,85 @@ body p{
   margin-left: 0%;
 }
 }
-
+*/
 
 
 /*Main Text Styles*/
-.home_header1 {
-	padding-top: 80px;
+#book_content {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-width: 40em;
+	margin: auto;
+}
+
+#book_content p, #book_content ol, #book_content ul {
+	font-family: Georgia, serif;
+	font-size: 0.89em;
+	line-height: 1.83em;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+#book_content .objectives ol {
+	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+	margin: 10px 25px 0 20px;
+}
+
+#book_content .informalfigure.
+
+#book_content h2 {
+    line-height: 1.83em;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+#book_content .learningObjective {
+	background-color: #d2d1c2;
+}
+
+#book_content .focus {
+	background-color: #e3eff7;
+	padding-bottom: 20px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	clear: both;
+}
+
+#book_content .focus .title {
+	background-color: #08629a;
+	color: white;
+	font-size: 1.1em;
+	text-transform: uppercase;
 	text-align: center;
+	letter-spacing: 0.125em;
+	padding: 10px 0px 7px 0px;
+	margin-bottom: 10px;
+}
+
+#book_content .focus p {
+	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+	margin: 10px 25px 0 20px;
+}
+.main_header {
+	line-height: 1.83em;
+	margin-bottom: 24px;
+	color: #333;
+	font-size: 1.5em;
+}
+
+.objectives {
+	background-color: #eae9dc;
+	padding-bottom: 20px;
+}
+
+.objectives .learningObjective {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.125em;
+	padding: 10px 0px 7px 0px;
+	margin-bottom: 10px;
 }
 
 .main_text2 {
@@ -338,6 +428,9 @@ a.footlink:visited {
     cursor: pointer;
 }
 
+.dropbutton {
+	text-align: left;
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -414,7 +507,6 @@ a.footlink:visited {
 	background-color: #db7400;
 	text-decoration: none;
 	color: black;
-	padding: 5px;
 	border-radius: 4px;
 }
 

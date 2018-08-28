@@ -19,6 +19,12 @@
 
     <!-- Linking Icon Library Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Linking MathJax Library -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <!-- Linking Tab Icon -->
+    <link rel="icon" href="images/favicon.ico">
     
     <!-- metadata -->
     <meta charset="UTF-8">
@@ -36,18 +42,48 @@
 
   <div class="sidenav" id="sidenav">
     <ol>
-      <li><button onclick="dropfunc()" class="dropbutton">Atoms</button></li>
-      <div id="content1" class="content1menu">
-        <ul>
+      <span>
+        <li><button class="dropbutton">Atoms</button></li>
+        <ul class="sub_menu">
           <li><a href="">111</a></li>
           <li><a href="">111</a></li>
         </ul>
-      </div>
-      <li><a href="">Molecules</a></li>
-      <li><a href="">Reactions</a></li>
-      <li><a href="">Heat and Work</a></li>
-      <li><a href="">Quantum Mechanics</a></li>
-      <li><a href="">Chemical Bonds</a></li>
+      </span>
+      <span>
+        <li><button class="dropbutton">Molecules</button></li>
+        <ul class="sub_menu">
+          <li><a href="">222</a></li>
+          <li><a href="">222</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropbutton">Reactions</button></li>
+        <ul class="sub_menu">
+          <li><a href="">222</a></li>
+          <li><a href="">222</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropbutton">Heat and Work</button></li>
+        <ul class="sub_menu">
+          <li><a href="">222</a></li>
+          <li><a href="">222</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropbutton">Quantum Mechanics</button></li>
+        <ul class="sub_menu">
+          <li><a href="">111</a></li>
+          <li><a href="">111</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropbutton">Chemical Bonds</button></li>
+        <ul class="sub_menu">
+          <li><a href="">222</a></li>
+          <li><a href="">222</a></li>
+        </ul>
+      </span>
     </ol>
   </div>
 
@@ -82,18 +118,23 @@
         <li><a class="active" href="Energy1.html">Energy Introduction</a></li>
         <li><a href="EnergySource.html">Energy Source</a></li>
         <li><a href="/blog">Tabx</a></li>
+        <span class="page-buttons">
+        <a href="#" style="float: right;">Next &raquo;</a>
+        <a href="#" style="float: left;">&laquo; Previous</a>
+      </span>
       </ul>
     </div>
       
 
     <!-- Main content -->
-    <div class="main_text2">
-      <div class="page-buttons">
-        <a href="#" id="next" style="float: right;">Next &raquo;</a>
-        <a href="#" id="previous" style="float: left;">&laquo; Previous</a>
-      </div>
-      <div class="home_header1">
-        <h1 style="font-size: 1.9em;">Energy</br>Finding it - Converting it - Storing it - Using it</h1>
+    <div id="book_content">
+      <h1 class="main_header">Energy</h1>
+      <div class="objectives">
+        <h2 class="learningObjective">Learning Objectives</h2>
+        <ol class="obj_list">
+          <li>To develop a basic understanding of what is Energy</li>
+          <li>Obj 2</li>
+        </ol>
       </div><!-- /.home_header1 -->
       <div class="para1">
         <p><img src="images/FIRE.jpg" alt="Fire" style="max-width:200px; float: left; margin-right: 20px;">
@@ -109,18 +150,17 @@
         <p>Connected with the extraction of both coal and oil is the release of gas phase fuels. Natural gas has become an important energy source. It too is a fossil fuel but as a gas its distribution to consumers is different than it is for coal (a solid) or oil (a liquid).</p>
         <p><img src="images/PIPE.jpg" alt="Pipe" style="max-width:200px; float: right; margin-left: 20px;">Combustion is the common method by which all of these materials release energy. This was crucial to fuel the growth in health and wealth during the past centuries, but now we are concerned about the ramifications of running out of some of these fuel sources (the fossil fuels) and the implications that their combustion has for climate change.</p>
         <p>Hydropower is another ancient source of energy. As water naturally falls under the influence of gravity, its kinetic energy has been used to turn water wheels and has been used to grind wheat or saw timber or stone. Some records suggest such uses as early as the 4<sup>th</sup> century BC in India. To increase the usefulness of this power source, dams are constructed to hold vast quantities of water at an elevated height. This is stored energy. Today, hydropower is almost exclusively hydroelectric power; the hydropower is converted into electrical power for distribution and utilization.</p>
-        <p>Solar power is increasing in popularity. Its simplest implementation is just using the heat of the sun to warm water. Commonly now, however, the phrase refers to photovoltaic devices that directly convert sunlight into electrical energy. By contrast, there are some commercial power plants that use a field of mirrors to focus sunlight to a central spot and use it to boil water to drive turbines and produce electrical power.</p>
+        <div class="focus">
+          <div class="title">Solar</div>
+          <p>
+           power is increasing in popularity. Its simplest implementation is just using the heat of the sun to warm water. Commonly now, however, the phrase refers to photovoltaic devices that directly convert sunlight into electrical energy. By contrast, there are some commercial power plants that use a field of mirrors to focus sunlight to a central spot and use it to boil water to drive turbines and produce electrical power.
+         </p>
+         </div>
         <p>Wind power is also an old power source. Sailing vessels have been powered by the wind for millennia. Windmills used the wind to grind grains. They have been used to pump water out of deep wells. Now they dot the landscape to directly produce electrical power.</p>
         <p>Ocean tides have also been harnessed to generate power. Even in Roman times, capturing high tide waters in dams and then using their outflow to drive mills had been developed. In modern times they have been used to generate electricity. The largest tidal power plant is in South Korea which can generate 254 MW of electrical power.</p>
         <p>Nuclear power has been harnessed comparatively recently for energy production. Certain radioactive elements (commonly uranium-235) can be induced to undergo chain reactions in a reactor core, and produce copious amounts of heat in a controlled fashion. This heat can be used to boil water which in turn is used to turn turbines and produce electrical energy.</p>
         <p>Biofuels are derived directly from a biological source. Chopping down trees or collecting cow dung for fuel are still important energy sources in third world countries. But when we discuss biofuels, we generally are thinking of a sustainable process that is intentionally engineered to produce fuel. Ethanol from corn fermentation or harvesting algae pools for oils to produce diesel fuel are some successful examples. While coal and oil are, in one sense also bio-derived fuels, they also require millions of years through geological processes to be formed and are considered separately.</p>
         <p>When we speak of energy, we commonly think in terms of heat and electricity, as we have outlined above. Another aspect of importance to each of us is the energy we use to power ourselves. At its most fundamental, the energy that we derive from eating and breathing is chemically related to the energy of combustion of fossil fuels. An important chemical aspect of energy is the biological conversion of food into energy: keeping us warm, helping us work, enabling us to think.</p>
-
-
-        <div class="page-buttons">
-          <a href="#" id="next" style="float: right;">Next &raquo;</a>
-          <a href="#" id="previous" style="float: left;">&laquo; Previous</a>
-        </div>
 
 
       </div>
