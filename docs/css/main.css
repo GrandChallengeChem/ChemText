@@ -2,10 +2,12 @@ body {
   font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
 }
 
+/*
 a[href], a:visited {
   color: #000;
   text-decoration: underline;
 }
+*/
 a:hover {
   text-decoration: none;
 }
@@ -25,38 +27,49 @@ a img {
 
 }
 
-.sub_menu {
-	display: none;
-}
+
 /* Top Navigation Menu Style */
 .topnav {
-	background-color: #333;
+	background-color: #333333;
 	position: sticky;
 	top: 0;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0;
 }
 .topnav ul {
 	padding: 5px;
 	margin: 0px;
 	text-align: center;
+	overflow: auto;
 }
 .topnav li {
 	list-style-type: none;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: #db7400;
+	background-color: #d2d1c2;
 	border-radius: 3px;
 	display: inline;
 	transition: 0.4s;
 }
 
+.nav_button a {
+	list-style-type: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #d2d1c2;
+	border-radius: 3px;
+	display: inline;
+	transition: 0.4s;	
+}
 .topnav li:hover {
 	background-color: #b7b7b7;
 }
 
 
-.topnav li a {
+.topnav a {
 	text-decoration: none;
-	color: aliceblue;
+	color: #222222;
 	
 }
 
@@ -106,7 +119,7 @@ a img {
 	transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .sidenav button:hover {
 	color: #ffffff;
 }
 
@@ -117,6 +130,14 @@ a img {
 	left: 0;
 	padding-left: 7px;
 	font-size: 40px;
+}
+
+.sub_menu {
+	display: none;
+}
+
+.sub_menu a {
+	font-size: 14px;
 }
 
 .sidetool {
@@ -150,6 +171,7 @@ a img {
 	font-size: 40px;
 }
 
+/*
 .menu_buttons {
 	right: 0px;
 	left: 0px;
@@ -157,6 +179,7 @@ a img {
 	top: 20px;
 	position: sticky;
 }
+*/
 
 .periodictabletext {
     visibility: hidden;
@@ -215,6 +238,9 @@ a img {
 	overflow-y: auto;
 	max-width: 40em;
 	margin: auto;
+	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+	line-height: normal;
+	font-size: 16px;
 }
 
 #book_content p, #book_content ol, #book_content ul {
@@ -271,6 +297,7 @@ a img {
 	margin-bottom: 24px;
 	color: #333;
 	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .objectives {
@@ -285,6 +312,7 @@ a img {
 	letter-spacing: 0.125em;
 	padding: 10px 0px 7px 0px;
 	margin-bottom: 10px;
+	font-weight: 550;
 }
 
 .main_text2 {
