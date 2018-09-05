@@ -234,8 +234,6 @@ a img {
 
 /*Main Text Styles*/
 #book_content {
-	overflow-x: hidden;
-	overflow-y: auto;
 	max-width: 40em;
 	margin: auto;
 	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
@@ -251,6 +249,9 @@ a img {
 	padding-bottom: 6px;
 }
 
+#book_content p {
+	position: relative;
+}
 #book_content .objectives ol {
 	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
 	margin: 10px 25px 0 20px;
@@ -324,6 +325,28 @@ a img {
 	margin-top: 0px;
 	margin-left: 100px;
   	margin-right: 100px;
+}
+
+.hoverbox {
+	background-color: yellow;
+	padding: 5px;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	right: -22em;
+	max-width: 280px;
+	transition: 0.2s;
+}
+
+.hovertext {
+	all: initial;
+	text-decoration: underline dashed;
+	font-weight: bold;
+}
+
+.hovertext:hover + .hoverbox {
+	visibility: visible;
+	opacity: 1;
 }
 
 p {
