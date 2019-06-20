@@ -1,4 +1,4 @@
-/* -------- Make Responsive Page -------- */
+/* -------- Make Responsive Pages -------- */
 
 html {
 	box-sizing: border-box;
@@ -81,7 +81,7 @@ img {
 		padding: 14px 16px;
 		text-decoration: none;
 		font-size: 17px;
-		width: 33.33333%;
+		width: 100%;
 	}
 
 	.navbar a:hover {
@@ -101,7 +101,6 @@ img {
 }
 
 	/* Row and Text Images */
-
 	.row .text-img .level {
 		max-width: 300px;
 		max-height: 300px;
@@ -179,7 +178,6 @@ img {
 	}
 
 	/* Three Levels 1 & 2 */
-
 	.row {
 		margin: auto;
 		padding-top: 40px;
@@ -189,14 +187,14 @@ img {
 
 /* Tablet version */
 
-@media screen and (min-width: 900px){
+@media only screen and (min-width: 600px) {
 
 	.navbar a {
 		float: left;
 	}
 
 	.footer-text a {
-		float: right;
+		float: center;
 	}
 
 	.button {
@@ -204,7 +202,6 @@ img {
 	}
 
 	/* Row and Text Images */
-
 	.row .text-img .level {
 		max-width: 300px;
 		max-height: 300px;
@@ -213,11 +210,19 @@ img {
 
 /* Desktop Version */
 
-@media screen and (min-width: 730px){
+@media only screen and (min-width: 768px){
 
 	.page-title {
 		font-size: initial;
 		padding: auto;
+	}
+
+	.navbar a {
+		width: 33.33333%;
+	}
+
+	.footer-text a {
+		float: right;
 	}
 
 	.row {
@@ -232,10 +237,9 @@ img {
 	}
 
 	/* Home Page */
-
 	.col {
 		flex: 33.33%;
-		padding: 5px;
+		padding: 0px;
 	}
 
 	.text-img {
@@ -243,8 +247,11 @@ img {
 		padding: 5px;
 	}
 
-	/* Three Levels 1 & 2 */
+	.footer-text {
+		width: 100%;
+	}
 
+	/* Three Levels 1 & 2 */
 	.level {
 		flex: 33.33%;
 		display: block;	
@@ -264,7 +271,6 @@ img {
 	}
 
 	/* Image Overlay */
-
 	.level-img {
 		display: block;
 		width: 100%;
@@ -358,37 +364,86 @@ img {
 
 }
 
-/* -------- Energy 1  --------- */
+/* -------- Book Content  --------- */
 /* Code follows the home pages, alterations bellow */
 
 /* Mobile Version */
 
-/* Navbar Menu Style */
-.nrg1 .navbar a {
-	float: center;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	width: 16.6666%;
+.book-content .main-content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"page-title"
+	"navbar"
+	"main-text"
+	;
 }
+
+.book-content .navbar {
+	grid-area: navbar;
+	grid-column: 1/2;
+	overflow: hidden;
+	background-color: #333;
+	color: #f2f2f2;
+}
+
+	/* Navbar Menu Style */
+	.book-content .navbar a {
+		float: center;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		width: 100%;
+		background-color: #333;
+	}
+
+	.book-content .navbar button {
+		float: center;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		width: 100%;
+		background-color: #333;
+		border: none;
+		align-self: center;
+	}
+
+	.book-content .navbar a:hover {
+		background-color: #bfbfbf;
+		color: black;
+	}
+
+	.book-content .navbar button:hover {
+		background-color: #bfbfbf;
+		color: black;
+		cursor: pointer;
+	}
+
+	.book-content .navbar button.active {
+		background-color: #b3b3b3;
+		color: white;
+	}
 
 	/* Drowndown Button Style */
 	.dropdown {
-		float: left;
-		overflow: hidden;
+		position: relative;
 	}
 
-	.dropdown .dropbtn {
+	.dropbtn {
 		cursor: pointer;
 		font-size: 17px;  
 		border: none;
 		outline: none;
 		color: white;
 		padding: 14px 16px;
-		background-color: #333;
+		background-color: inherit;
 		margin: 0;
 	}
 
@@ -399,20 +454,18 @@ img {
 
 	.dropdown-content {
 		display: none;
-		position: absolute;
 		background-color: #f9f9f9;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 1;
+		overflow: visible;
 	}
 
 	.dropdown-content a {
-		float: none;
 		color: black;
 		padding: 12px 16px;
 		text-decoration: none;
 		display: block;
-		text-align: left;
 	}
 
 	.dropdown-content a:hover {
@@ -421,71 +474,237 @@ img {
 
 	.show {
 		display: block;
+		position: relative;
 	}
 
-	/* Side bar Style */
-	.sidebar {
-	  	height: 100%;
-	  	width: 0;
-	  	position: fixed;
-	  	z-index: 1;
-	  	top: 0;
-	  	left: 0;
-	  	background-color: #333;
-	  	overflow-x: hidden;
-	  	transition: 0.5s;
-	  	padding-top: 60px;
+	/* Sidebar Style */
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #333;
+		overflow-x: hidden;
+		padding-top: 0px;
+		transition: 0.5s;
+	}
+	
+	.sidenav button {
+		background: none!important;
+		color: inherit;
+		border: none;
+		cursor: pointer;
 	}
 
-	.sidebar button {
-	 	padding: 8px 8px 8px 32px;
-	  	text-decoration: none;
-	  	font-size: 25px;
-	  	color: #818181;
+	.sidenav a, .sidenav ol, .sidetool a, .sidenav button {
 		display: block;
-	  	transition: 0.3s;
-	}
-
-	.sidebar button:hover {
-	  	color: #f1f1f1;
-	}
-
-	.sidebar .closebtn {
-	  	position: absolute;
-	  	top: 0;
-	  	right: 25px;
-	  	font-size: 36px;
-	  	margin-left: 10px;
-	}
-
-	.openbtn {
-	  	cursor: pointer;
-	  	background-color: #333;
-	  	color: white;
-	  	border: none;
-	  	float: center;
-		display: block;
-		color: #f2f2f2;
-		text-align: center;
-		padding: 14px 16px;
+		padding: 9px 9px 9px 32px;
 		text-decoration: none;
 		font-size: 17px;
-		width: 16.6666%;
+		color: #b3b3b3;
+		transition: 0.3s;
+		text-align: left;
+  		cursor: pointer;
 	}
 
-	.openbtn:hover {
-	  	background-color: #bfbfbf;
-		color: black;
+	.sidenav a:hover, .sidenav button:hover, .dropdown-btn:hover {
+		color: #f1f1f1;
 	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 60px;
+	}
+
+	.main-text {
+		transition: margin-left .5s;
+  		padding: 20px;
+	}
+
+	/* Submenu Sidebar Style */
+	.sidenav .sub-menu {
+		display: none;
+		background-color: #262626;
+		padding-left: 8px;
+	}
+
+	.sidenav .sub-menu a {
+		font-size: 14px;
+	}
+
+	.sidenav .active {
+  		background-color: green;
+  		color: white;
+	}
+
+	.sidenav .fa-caret-down {
+	  	float: right;
+	  	padding-right: 8px;
+	}
+
+	/* SideTool Style */
+	.sidetool {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: #333;
+		overflow-x: hidden;
+		padding-top: 35px;
+		transition: 0.5s;
+	}
+
+	.sidetool .closebtn {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		font-size: 36px;
+		margin-left: 60px;
+		transition: 0.3s;
+	}
+
+	.sidetool i {
+		display: block;
+		padding: 0px 0px 30px 15px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #e2e2e2;
+		transition: 0.3s;
+	}
+
+/* Text Style */
+.book-content .main-header {
+	line-height: 1.83em;
+	margin-bottom: 24px;
+	color: #333;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.book-content .main-text {
+	margin: auto;
+	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+	line-height: normal;
+	font-size: 16px;
+}
+
+.book-content h2 {
+    line-height: 1.83em;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.book-content p {
+	position: relative;
+}
+
+/* Objectives Box Style */
+.objectives {
+	background-color: #eae9dc;
+	padding-bottom: 20px;
+}
+
+.objectives-title {
+	background-color: #d2d1c2;
+}
+
+.objectives .objectives-title {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.125em;
+	padding: 10px 0px 7px 0px;
+	margin-bottom: 10px;
+	font-weight: 550;
+}
+
+.objectives-text {
+	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+	margin: 10px 25px 0 20px;
+}
+
+/* Focus Box Style */
+.focus {
+	background-color: #e3eff7;
+	padding-bottom: 20px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	clear: both;
+}
+
+.focus .focus-title {
+	background-color: #08629a;
+	color: white;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.125em;
+	padding: 10px 0px 7px 0px;
+	margin-bottom: 10px;
+}
+
+.focus .focus-text {
+	font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+	margin: 10px 25px 0 20px;
+}
+
+/* Images Style */
+.book-content .text-img {
+	display: block;
+	float: center;
+	margin: 5px;
+}
 
 /* Tablet version */
 
-@media screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
 
+	.book-content .navbar a {
+		float: left;
+	}
+
+	.book-content .navbar button {
+		float: left;
+	}
+	
 }
 
 /* Desktop Version */
 
-@media screen and (min-width: 730px) {
+@media only screen and (min-width: 768px) {
+
+	.page-title {
+		font-size: initial;
+		padding: auto;
+	}
+
+	.book-content .navbar a {
+		width: 16.66666%;
+	}
+
+	.book-content .navbar button {
+		width: 16.66666%;
+	}
+
+	.book-content .main-text {
+		max-width: 75%;
+		margin: auto;
+		font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+		line-height: normal;
+		font-size: 16px;
+	}
+
+	/* Images Style */
+	#coal-img {
+		float: right;
+	}
 
 }
