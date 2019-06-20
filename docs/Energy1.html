@@ -36,8 +36,8 @@
 
 <body>
 
-<!-- .nrg1 .main-content -->
-<div class="nrg1" class="main-content"> 
+<!-- .book-content .nrg1 .main-content -->
+<div class="book-content" class="nrg1" class="main-content"> 
 
   <!-- .page-title -->
   <div class="page-title">
@@ -45,56 +45,83 @@
     <h2>Introduction: Chapter 1</h2>
   </div><!-- /.page-title -->
 
+  <!-- .sidenav -->
+  <div class="sidenav" id="sidenav">
+    <ol>
+      <span>
+        <ul class="fa-ul" style="margin-left: 0;">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <br><br>
+          <li><i class="fa-li fa fa-home" style="top: 0.8em;"></i><a href="index.html">Home</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropdown-btn">Atoms<i class="fa fa-caret-down"></i></button></li>
+        <ul class="sub-menu">
+          <li><a href="">Atomic Masses</a></li>
+          <li><a href="">Periodic Table</a></li>
+          <li><a href="">Mole and Molar Masses</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropdown-btn">Molecules<i class="fa fa-caret-down"></i></button></li>
+        <ul class="sub-menu">
+          <li><a href="">Isotopes</a></li>
+          <li><a href="">Nomenclature</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropdown-btn">Reactions<i class="fa fa-caret-down"></i></button></li>
+        <ul class="sub-menu">
+          <li><a href="">Acids and Bases</a></li>
+          <li><a href="">Aqueous Solutions</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropdown-btn">Heat and Work<i class="fa fa-caret-down"></i></button></li>
+        <ul class="sub-menu">
+          <li><a href="">Enthalpy</a></li>
+          <li><a href="">Calorimetry</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropdown-btn">Quantum Mechanics<i class="fa fa-caret-down"></i></button></li>
+        <ul class="sub-menu">
+          <li><a href="">Thermodynamic Stability</a></li>
+        </ul>
+      </span>
+      <span>
+        <li><button class="dropdown-btn">Chemical Bonds<i class="fa fa-caret-down"></i></button></li>
+        <ul class="sub-menu">
+          <li><a href="">Electrolysis</a></li>
+          <li><a href="">Buffers</a></li>
+        </ul>
+      </span>
+    </ol>
+  </div><!-- /.sidenav -->
+
+  <!-- .sidetool -->
+   <div class="sidetool" id="sidetool">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeTool()">&times;</a><br><br>
+    <span id="prdtbl"><i style="font-size:24px;cursor:help; " class="fa" onclick="modalfunc()">&#xf278;</i></span>
+    <i style="font-size:24px" class="fa">&#xf278;</i>
+    <i style="font-size:24px" class="fa">&#xf278;</i>
+  </div>
+
+  <!-- sidetool1, Periodic Table -->
+  <div id="modal01" class="w3-modal" style="display:none;" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="images/periodic-table.png" style="width:100%">
+    </div>
+  </div><!-- /sidetool1, Periodic Table -->
+
   <!-- .navbar -->
   <div class="navbar">
 
-    <!-- .sidebar #side-content -->
-    <div class="sidebar" id="side-content">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <ol> 
-      
-        <li><button class="">Atoms</button></li>
-          <ul class="">
-            <li><a href="">Atomic Masses</a></li>
-            <li><a href="">Periodic Table</a></li>
-            <li><a href="">Mole and Molar Masses</a></li>
-          </ul>
+    <span><button class="openbtn" onclick="openNav()">&#9776; Table of Content</button></span>
 
-        <li><button class="">Molecules</button></li>
-          <ul class="">
-            <li><a href="">Isotopes</a></li>
-            <li><a href="">Nomenclature</a></li>
-          </ul>
-
-        <li><button class="">Reactions</button></li>
-          <ul class="">
-            <li><a href="">Acids and Bases</a></li>
-            <li><a href="">Aqueous Solutions</a></li>
-          </ul>
-
-        <li><button class="">Heat and Work</button></li>
-          <ul class="">
-            <li><a href="">Enthalpy</a></li>
-            <li><a href="">Calorimetry</a></li>
-          </ul>
-
-        <li><button class="">Quantum Mechanics</button></li>
-          <ul class="">
-            <li><a href="">Thermodynamic Stability</a></li>
-          </ul>
-
-        <li><button class="">Chemical Bonds</button></li>
-          <ul class="">
-            <li><a href="">Electrolysis</a></li>
-            <li><a href="">Buffers</a></li>
-          </ul>
-
-      </ol>
-    </div><!-- /.sidebar #side-content -->
-
-    <button class="openbtn" onclick="openNav()">Table of Content</button>
-
-    <a href="#">&laquo; Previous</a>
+    <a href="#" class="btn-nav">&laquo; Previous</a>
 
     <!-- .levels-nav -->
     <div class="levels-nav">
@@ -126,24 +153,14 @@
       </div><!-- .dropdown -->
     </div><!-- /.challenges-nav -->
 
-    <a href="#">Next &raquo;</a>
+    <a href="#" class="btn-nav">Next &raquo;</a>
 
-    <button class="openbtn" onclick="openNav()">Reference</button>
-    
-    <!-- .sidebar #side-references -->
-    <div class="sidebar" id="side-reference">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <span id="prdtbl">
-        <i style="font-size:24px;cursor:help;" class="fa" onclick="modalfunc()">&#xf278;</i>
-      </span>
-      <i style="font-size:24px" class="fa">&#xf278;</i>
-      <i style="font-size:24px" class="fa">&#xf278;</i>
-    </div><!-- /.sidebar -->
+    <button class="openbtn" onclick="openTool()">Reference &#9776;</button>
 
   </div><!-- /.navbar -->
 
   <!-- .main-text -->
-  <div class="main-text">
+  <div class="main-text" id="main-text">
 
     <h1 class="main-header">1.1 Energy</h1>
 
@@ -160,12 +177,12 @@
 
     <!-- .text -->
     <div class="text">
-      <p> <div class="text-img"> <img src="images/FIRE.jpg" alt="Fire"> </div>
+      <p> <div class="text-img" id="fire-img"> <img src="images/FIRE.jpg" alt="Fire"> </div>
       The world’s recent past has shown an unparalleled growth in wealth and health. While there are certainly poor people in poor nations who also suffer from poor health, nevertheless, considered across the world, our longevity and affluence is widely spread. While finding ways to spread that wealth and health more fully to all people is certainly an important Grand Challenge in itself, it is claimed here that the tremendous growth in the availability and use of <span class="hovertext">energy</span> is central to explaining past growth and achieving future improvement.</p>
     
       <p>Humanity first started to exploit energy sources when fire was discovered. Plants, we found, and especially heavy, dense plants like trees, were perfectly suited for fire. We used it for warmth and for cooking. It also was used driving new technology, such as the refining of metals and shaping them for new uses.</p>
 
-      <p> <div class="text-img"> <img src="images/COAL.jpg" alt="COAL"> </div>
+      <p> <div class="text-img" id="coal-img"> <img src="images/COAL.jpg" alt="Coal"> </div>
       Coal is a rock-like substance that has been known throughout history. Its earliest use as a source of energy dates to about 1000 BC in China where it was being used to refine copper. A Greek report from the 3<sup>rd</sup> century BC mentions coal as “burning rocks”. There is some evidence of its use in Britain in the 3<sup>rd</sup> millennium BC in funeral pyres. Coal became the energy source driving the Industrial Revolution in Europe and America.</p>
 
       <p>Petroleum has also been known from antiquity. Its use as an asphalt construction material is claimed for ancient Babylon. The Chinese have been using it as a fuel source since 1000 BC and perhaps even earlier. These all came from surface deposits. Hand dug wells, using bamboo as a drill, were developed throughout Asia from the 3<sup>rd</sup> century AD onward.</p>
@@ -174,7 +191,7 @@
 
       <p>Connected with the extraction of both coal and oil is the release of gas phase fuels. Natural gas has become an important energy source. It too is a fossil fuel but as a gas its distribution to consumers is different than it is for coal (a solid) or oil (a liquid).</p>
 
-      <p> <div class="text-img"> <img src="images/PIPE.jpg" alt="Pipe"> </div>
+      <p> <div class="text-img" id="pipe-img"> <img src="images/PIPE.jpg" alt="Pipe"> </div>
       Combustion is the common method by which all of these materials release energy. This was crucial to fuel the growth in health and wealth during the past centuries, but now we are concerned about the ramifications of running out of some of these fuel sources (the fossil fuels) and the implications that their combustion has for climate change.</p>
 
       <p>Hydropower is another ancient source of energy. As water naturally falls under the influence of gravity, its kinetic energy has been used to turn water wheels and has been used to grind wheat or saw timber or stone. Some records suggest such uses as early as the 4<sup>th</sup> century BC in India. To increase the usefulness of this power source, dams are constructed to hold vast quantities of water at an elevated height. This is stored energy. Today, hydropower is almost exclusively hydroelectric power; the hydropower is converted into electrical power for distribution and utilization.</p>
