@@ -111,7 +111,7 @@ img {
 	}
 
 	/* Click-on Definition Button Style*/
-	.dropdown-text, .dropdown-text-extra {
+	.dropdown-text {
 		background-color: inherit;
 		color: #006600;
 		font-size: inherit;
@@ -120,7 +120,7 @@ img {
 		border: none;
 		cursor: pointer;
 		text-decoration: none;
-		display: inline;
+		display: inline-block;
 		padding: 0px;
 	}
 
@@ -129,7 +129,7 @@ img {
 		display: inline;
 	}
 
-	.dropdown-def, .dropdown-def-extra {
+	.dropdown-def {
 		display: none;
 	  	position: absolute;
 	  	background-color: #F8F8F8;
@@ -702,7 +702,7 @@ img {
 .tab {
 	overflow: hidden;
 	border: 1px solid #ccc;
-	background-color: #f1f1f1;
+	background-color: #cc0099;
 }
 
 .tab button {
@@ -717,11 +717,13 @@ img {
 }
 
 .tab button:hover {
-	background-color: #ddd;
+	background-color: #a82487;
+	opacity: 80%;
 }
 
 .tab button.active {
-	background-color: #ccc;
+	background-color: #a82487;
+	opacity: 80%;
 }
 
 .tabcontent {
