@@ -1,7 +1,7 @@
 /* -------- Home Page -------- */
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
+/*var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -10,7 +10,7 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
-} 
+} */
 
 /* Click-on Definition Script */
 
@@ -18,10 +18,6 @@ window.onscroll = function() {
 toggle between hiding and showing the dropdown content */
 function DropdownText() {
   document.getElementById("homo-sapiens").classList.toggle("show");
-}
-
-function DropdownTextExtra() {
-  document.getElementById("homo-sapiens-extra").classList.toggle("show");
 }
 
 /* Close the dropdown menu if the user clicks outside of it */
@@ -37,19 +33,6 @@ window.onclick = function(event) {
     }
   }
 } 
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown-text-extra')) {
-    var dropdowns = document.getElementsByClassName("dropdown-def-extra");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 /* Function that displays a tooltip with content of "content:" 
 below the text wrapped by <span> of id hmsp 
