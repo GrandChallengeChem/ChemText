@@ -18,7 +18,7 @@ img {
 
 /* -------- Home, Why Grand Challenges, The Three Levels 1 & 2  --------- */
 
-/* Mobile Version */
+/* --- Mobile Version --- */
 
 .main-content {
 	display: grid;
@@ -230,7 +230,7 @@ img {
 		max-width: 250px;
 	}
 
-/* Tablet Version */
+/* --- Tablet Version --- */
 
 @media only screen and (min-width: 600px) {
 
@@ -253,7 +253,7 @@ img {
 	}
 }
 
-/* Desktop Version */
+/* --- Desktop Version --- */
 
 @media only screen and (min-width: 768px){
 
@@ -416,7 +416,7 @@ img {
 /* -------- Book Content  --------- */
 /* Code follows the home pages, alterations bellow */
 
-/* Mobile Version */
+/* --- Mobile Version --- */
 
 .book-content .main-content {
 	display: grid;
@@ -435,7 +435,6 @@ img {
 	overflow: hidden;
 	background-color: #333;
 	color: #f2f2f2;
-	transition: top 0.3s;
 }
 
 	/* Navbar Menu Style */
@@ -538,13 +537,14 @@ img {
 		border: none;
 		cursor: pointer;
 		width: 100%;
+		display: block;
 	}
 
 	.sidenav a, .sidenav ol, .sidetool a, .sidenav button {
 		display: block;
 		padding: 9px 9px 9px 32px;
 		text-decoration: none;
-		font-size: 17px;
+		font-size: 15px;
 		color: #b3b3b3;
 		transition: 0.3s;
 		text-align: left;
@@ -559,29 +559,15 @@ img {
 		position: absolute;
 		top: 0;
 		right: 25px;
-		font-size: 36px;
-		margin-left: 60px;
-	}
-
-	.main-text {
-		transition: margin-left .5s;
-  		padding: 20px;
+		font-size: 30px;
+		margin-left: 70px;
 	}
 
 	/* Submenu Sidebar Style */
-	.sidenav .sub-menu {
+	.dropdown-container {
 		display: none;
-		background-color: #262626;
-		padding-left: 8px;
-	}
-
-	.sidenav .sub-menu a {
-		font-size: 14px;
-	}
-
-	.sidenav .active {
-  		background-color: green;
-  		color: white;
+		background-color: inherit;
+		padding-left: 4px;
 	}
 
 	.sidenav .fa-caret-down {
@@ -753,6 +739,11 @@ img {
 		background-color: #f1f1f1;
 	}
 
+/* Button Style */
+.book-content .button {
+	margin-bottom: 20px;
+}
+
 /* Images Style */
 .book-content .text-img {
 	display: block;
@@ -760,7 +751,7 @@ img {
 	margin: 5px;
 }
 
-/* Tablet Version */
+/* --- Tablet Version --- */
 
 @media only screen and (min-width: 600px) {
 
@@ -774,7 +765,7 @@ img {
 	
 }
 
-/* Desktop Version */
+/* --- Desktop Version --- */
 
 @media only screen and (min-width: 768px) {
 
@@ -782,6 +773,12 @@ img {
 		font-size: initial;
 		padding: auto;
 	}
+
+/*	.book-content .navbar {
+		position: fixed;
+		width: 100%;
+		transition: 0.3s;
+	}*/
 
 	.book-content .navbar a {
 		width: 16.66666%;
@@ -797,6 +794,11 @@ img {
 		font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
 		line-height: normal;
 		font-size: 16px;
+		transition: .5s;
+	}
+
+	.book-content .navbar {
+		transition: .5s;
 	}
 
 	/* Images Style */
