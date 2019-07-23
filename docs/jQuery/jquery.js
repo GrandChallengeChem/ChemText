@@ -1,16 +1,18 @@
 /* -------- Home Page -------- */
 
+/* Navbar Script */
+
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-/*var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-} */
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("navbar").style.top = "0";
+//   } else {
+//     document.getElementById("navbar").style.top = "-50px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// } 
 
 /* Click-on Definition Script */
 
@@ -18,6 +20,10 @@ window.onscroll = function() {
 toggle between hiding and showing the dropdown content */
 function DropdownText() {
   document.getElementById("homo-sapiens").classList.toggle("show");
+}
+
+function DropdownText2() {
+  document.getElementById("coal").classList.toggle("show");
 }
 
 /* Close the dropdown menu if the user clicks outside of it */
@@ -33,17 +39,6 @@ window.onclick = function(event) {
     }
   }
 } 
-
-/* Function that displays a tooltip with content of "content:" 
-below the text wrapped by <span> of id hmsp 
-$(document).ready(function(){
-  
-  $( "#hmsp" ).tooltip({
-    items: "span#hmsp",
-    content: "The binomial name Homo sapiens was coined by Carl Linnaeus (1758).[3] The Latin noun homō (genitive hominis) means \"human being\", while the participle sapiēns means \"discerning, wise, sensible\".",
-    track: true
-  });
-}); */
 
 /* -------- Book Content -------- */
 
@@ -61,45 +56,79 @@ function DropdownChallenges() {
 
 /* Sidenav Script */
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+/* Setting media query */
+var x = window.matchMedia("(min-width: 768px)")
+
+/* Set the width of the side navigation to 300px and the left margin of the page content to 300px */
 function openNav() {
   document.getElementById("sidenav").style.width = "300px";
+  if (x.matches) { // If media query matches, desktop version
+    document.getElementById("main-text").style.marginLeft = "300px";
+    document.getElementById("navbar").style.marginLeft = "300px";
+  }
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("sidenav").style.width = "0";
+  document.getElementById("main-text").style.marginLeft = "auto";
+  document.getElementById("navbar").style.marginLeft = "auto";
 }
 
 /* Submenu Sidebar Script */
 
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content
-- This allows the user to have multiple dropdowns without any conflict */
-var sidebar_dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+function OpenCH0() {
+  var x = document.getElementById("ch0");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-for (i = 0; i < sidebar_dropdown.length; i++) {
-  sidebar_dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var sub_menu = this.nextElementSibling;
-    if (sub_menu.style.display === "block") {
-      sub_menu.style.display = "none";
-    } else {
-      sub_menu.style.display = "block";
-    }
-  });
+function OpenCH1() {
+  var x = document.getElementById("ch1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function OpenCH2() {
+  var x = document.getElementById("ch2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function OpenCH3() {
+  var x = document.getElementById("ch3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 
 /* SideTool Script */
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+/* Set the width of the side tool to 80px and the right margin of the page content to 80px */
 function openTool() {
   document.getElementById("sidetool").style.width = "80px";
+  if (x.matches) { // If media query matches, desktop version
+    document.getElementById("main-text").style.marginRight = "80px";
+    document.getElementById("navbar").style.marginRight = "80px";
+  }
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+/* Set the width of the side tool to 0 and the right margin of the page content to 0 */
 function closeTool() {
   document.getElementById("sidetool").style.width = "0";
+  document.getElementById("main-text").style.marginRight = "auto";
+  document.getElementById("navbar").style.marginRight = "auto";
 }
 
 /* Function displaying the tooltip when cursor is hovered over the icon */
@@ -116,6 +145,16 @@ $(document).ready(function(){
 function modalfunc() {
   document.getElementById('modal01').style.display='block';
 }
+
+/* Second Click-on Definition Script */
+function ShowMore() {
+  var x = document.getElementById("coal-info");
+  if (x.innerHTML === "Information about coal.. ") {
+    x.innerHTML = "Extra Information..";
+  } else {
+    x.innerHTML = "Information about coal.. ";
+  }
+} 
 
 /* Exercises Tab Script */
 
