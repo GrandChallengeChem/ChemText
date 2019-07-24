@@ -27,18 +27,18 @@ function DropdownText2() {
 }
 
 /* Close the dropdown menu if the user clicks outside of it */
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown-text')) {
-    var dropdowns = document.getElementsByClassName("dropdown-def");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-} 
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropdown-text')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-def");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// } 
 
 /* -------- Book Content -------- */
 
@@ -79,6 +79,15 @@ function closeNav() {
 
 function OpenCH0() {
   var x = document.getElementById("ch0");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function OpenCH0_0() {
+  var x = document.getElementById("ch0.0.1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
