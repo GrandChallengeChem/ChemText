@@ -47,114 +47,102 @@
 
   <!-- .sidenav -->
   <div class="sidenav" id="sidenav">
-    <ol>
 
-      <span>
-        <ul class="fa-ul" style="margin-left: 0;">
-          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-          <br><br>
-          <li><i class="fa-li fa fa-home" style="top: 0.8em;"></i><a href="index.html">Home</a></li>
-        </ul>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Overview<i class="fa fa-caret-down"></i></button></li>
-        <ul class="sub-menu">
-          <li><a href="Space0.0.html">CH. 0.0</a></li>
-          <li><a href="Space0.1.html">Introduction</a></li>
-          <li><a href="Space0.2.html">Chemistry</a></li>
-          <li><a href="Space0.3.html">Problems</a></li>
-          <li><a href="Space0.4.html">CH. 0.4</a></li>
-        </ul>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Atoms<i class="fa fa-caret-down"></i></button></li>
-        <ul class="sub-menu">
-          <li><a href="">Importance of Atoms</a></li>
-          <li><a href="">Three sub-atomic particles</a></li>
-          <li><a href="">Electrons</a></li>
-          <li><a href="">Protons</a></li>
-          <li><a href="">Neutrons</a></li>
-          <li><a href="">The Nucleus</a></li>
-          <li><a href="">The Atom</a></li>
-          <li><a href="">The Elements</a></li>
-          <li><a href="">The Periodic Table I</a></li>
-          <li><a href="">Isotopes</a></li>
-          <li><a href="">Ions</a></li>
-          <li><a href="">Atomic Masses</a></li>
-          <li><a href="">The Periodic Table II</a></li>
-          <li><a href="">The Mole</a></li>
-        </ul>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Compounds<i class="fa fa-caret-down"></i></button></li>
-        <ul class="sub-menu">
-          <li><a href="">Laws of Definite and Multiple Proportions</a></li>
-          <li><a href="">Molecules</a></li>
-          <li><a href="">Ionic Compounds</a></li>
-          <li><a href="">Intermetallic Compounds</a></li>
-          <li><a href="">Coordination Complexes</a></li>
-          <li><a href="">The Solid State</a></li>
-        </ul>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Reactions<i class="fa fa-caret-down"></i></button></li>
-        <ul class="sub-menu">
-          <li><a href="">Reaction Equations</a></li>
-          <li><a href="">Stoichiometry</a></li>
-          <li><a href="">Synthesis</a></li>
-          <li><a href="">Decomposition</a></li>
-          <li><a href="">Replacement</a></li>
-          <li><a href="">Exchange</a></li>
-          <li><a href="">Acid/Base Reactions</a></li>
-          <li><a href="">Redox Reactions</a></li>
-          <li><a href="">Complexation</a></li>
-        </ul>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Quantum Mechanics<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Chemical Bonds<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Gases<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Liquids and Solids<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Solutions<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Chemical Equilibrium<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Acids and Bases<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Solubility and Complexation<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Thermodynamics<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Electrochemistry<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Chemical Kinetics<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Inorganic Chemistry<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Organic Chemistry<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Nuclear Chemistry<i class="fa fa-caret-down"></i></button></li>
-      </span>
-      <span>
-        <li><button class="dropdown-btn">Biochemistry<i class="fa fa-caret-down"></i></button></li>
-      </span>
+      <ul class="fa-ul" style="margin-left: 0;">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <br><br>
+        <li><i class="fa-li fa fa-home" style="top: 0.8em;"></i><a href="index.html">Home</a></li>
+      </ul>
+
+      <ol start="0">
+
+        <li><button class="dropdown-btn" onclick="OpenCH0()">Overview<i class="fa fa-caret-down"></i></button></li>
+          <div class="dropdown-container" id="ch0">
+            <ol class="sub-menu">
+              <li><a href="Space0.0.html">CH. 0.0</a></li>
+              <li><a href="Space0.1.html">Introduction</a></li>
+              <li><a href="Space0.2.html">Chemistry</a></li>
+              <li><a href="Space0.3.html">Problems</a></li>
+              <li><a href="Space0.4.html">Stars</a></li>
+            </ol>
+          </div>
+
+        <li><button class="dropdown-btn" onclick="OpenCH1()">Atoms<i class="fa fa-caret-down"></i></button></li>
+          <div class="dropdown-container" id="ch1">
+            <ol class="sub-menu">
+              <li><a href="">Importance of Atoms</a></li>
+              <li><a href="">Three sub-atomic particles</a></li>
+              <li><a href="">Electrons</a></li>
+              <li><a href="">Protons</a></li>
+              <li><a href="">Neutrons</a></li>
+              <li><a href="">The Nucleus</a></li>
+              <li><a href="">The Atom</a></li>
+              <li><a href="">The Elements</a></li>
+              <li><a href="">The Periodic Table I</a></li>
+              <li><a href="">Isotopes</a></li>
+              <li><a href="">Ions</a></li>
+              <li><a href="">Atomic Masses</a></li>
+              <li><a href="">The Periodic Table II</a></li>
+              <li><a href="">The Mole</a></li>
+            </ol>
+          </div>
+      
+      <li><button class="dropdown-btn" onclick="OpenCH2()">Compounds<i class="fa fa-caret-down"></i></button></li>
+        <div class="dropdown-container" id="ch2">
+          <ol class="sub-menu">
+            <li><a href="">Laws of Definite and Multiple Proportions</a></li>
+            <li><a href="">Molecules</a></li>
+            <li><a href="">Ionic Compounds</a></li>
+            <li><a href="">Intermetallic Compounds</a></li>
+            <li><a href="">Coordination Complexes</a></li>
+            <li><a href="">The Solid State</a></li>
+          </ol>
+      </div>
+
+      <li><button class="dropdown-btn" onclick="OpenCH3()">Reactions<i class="fa fa-caret-down"></i></button></li>
+        <div class="dropdown-container" id="ch3">
+          <ol class="sub-menu">
+            <li><a href="">Reaction Equations</a></li>
+            <li><a href="">Stoichiometry</a></li>
+            <li><a href="">Synthesis</a></li>
+            <li><a href="">Decomposition</a></li>
+            <li><a href="">Replacement</a></li>
+            <li><a href="">Exchange</a></li>
+            <li><a href="">Acid/Base Reactions</a></li>
+            <li><a href="">Redox Reactions</a></li>
+            <li><a href="">Complexation</a></li>
+          </ol>
+        </div>
+
+      <li><button class="dropdown-btn">Quantum Mechanics<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Chemical Bonds<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Gases<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Liquids and Solids<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Solutions<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Chemical Equilibrium<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Acids and Bases<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Solubility and Complexation<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Thermodynamics<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Electrochemistry<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Chemical Kinetics<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Inorganic Chemistry<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Organic Chemistry<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Nuclear Chemistry<i class="fa fa-caret-down"></i></button></li>
+
+      <li><button class="dropdown-btn">Biochemistry<i class="fa fa-caret-down"></i></button></li>
 
     </ol>
   </div><!-- /.sidenav -->
@@ -189,11 +177,6 @@
         <button class="dropbtn" onclick="DropdownLevels()"> Levels 
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content" id="dropdown-levels">
-          <a href="#">Introduce</a>
-          <a href="#">Explore</a>
-          <a href="#">Mastery</a>
-        </div>
       </div><!-- .dropdown -->
     </div><!-- /.levels-nav -->
 
@@ -204,11 +187,6 @@
         <button class="dropbtn" onclick="DropdownChallenges()"> Challenges
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content" id="dropdown-challenges">
-          <a href="Energy0.0.html">Energy</a>
-          <a href="Health0.0.html">Health</a>
-          <a href="Space0.0.html">Space Exploration</a>
-        </div>
       </div><!-- .dropdown -->
     </div><!-- /.challenges-nav -->
 
@@ -217,6 +195,19 @@
     <button class="openbtn" onclick="openTool()">Reference &#9776;</button>
 
   </div><!-- /.navbar -->
+
+  <!-- .dropdown-content, Navbar dropdowns -->
+  <div class="dropdown-content" id="dropdown-levels">
+    <a href="Space0.0.html" class="active">Introduce</a>
+    <a href="#">Explore</a>
+    <a href="#">Mastery</a>
+  </div>
+
+  <div class="dropdown-content" id="dropdown-challenges">
+    <a href="Energy0.0.html">Energy</a>
+    <a href="Health0.0.html">Health</a>
+    <a href="Space0.0.html" class="active">Space Exploration</a>
+  </div><!-- /.dropdown-content, Navbar dropdowns -->
 
   <!-- .main-text -->
   <div class="main-text" id="main-text">

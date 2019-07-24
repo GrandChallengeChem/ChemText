@@ -59,7 +59,15 @@
         <li><button class="dropdown-btn" onclick="OpenCH0()">Overview<i class="fa fa-caret-down"></i></button></li>
           <div class="dropdown-container" id="ch0">
             <ol class="sub-menu">
-              <li><a href="Energy0.0.html">CH. 0.0</a></li>
+              <!-- <li><a href="Energy0.0.html">CH. 0.0</a></li> -->
+              <li><button class="dropdown-btn" onclick="OpenCH0_0()">CH. 0.0<i class="fa fa-caret-down"></i></button></li>
+                <div class="dropdown-container" id="ch0.0.1">
+                  <ol>
+                    <li><a href="">CH. 0.0.1</a></li>
+                    <li><a href="">CH. 0.0.2</a></li>
+                    <li><a href="">CH. 0.0.3</a></li>
+                  </ol>
+                </div>
               <li><a href="Energy0.1.html">Introduction</a></li>
               <li><a href="Energy0.2.html">Chemistry</a></li>
               <li><a href="Energy0.3.html">Problems</a></li>
@@ -177,11 +185,6 @@
         <button class="dropbtn" onclick="DropdownLevels()"> Levels 
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content" id="dropdown-levels">
-          <a href="#">Introduce</a>
-          <a href="#">Explore</a>
-          <a href="#">Mastery</a>
-        </div>
       </div><!-- .dropdown -->
     </div><!-- /.levels-nav -->
 
@@ -192,11 +195,6 @@
         <button class="dropbtn" onclick="DropdownChallenges()"> Challenges
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content" id="dropdown-challenges">
-          <a href="Energy0.0.html">Energy</a>
-          <a href="Health0.0.html">Health</a>
-          <a href="Space0.0.html">Space Exploration</a>
-        </div>
       </div><!-- .dropdown -->
     </div><!-- /.challenges-nav -->
 
@@ -205,6 +203,19 @@
     <button class="openbtn" onclick="openTool()">Reference &#9776;</button>
 
   </div><!-- /.navbar -->
+
+  <!-- .dropdown-content, Navbar dropdowns -->
+  <div class="dropdown-content" id="dropdown-levels">
+    <a href="Energy0.0.html" class="active">Introduce</a>
+    <a href="#">Explore</a>
+    <a href="#">Mastery</a>
+  </div>
+
+  <div class="dropdown-content" id="dropdown-challenges">
+    <a href="Energy0.0.html" class="active">Energy</a>
+    <a href="Health0.0.html">Health</a>
+    <a href="Space0.0.html">Space Exploration</a>
+  </div><!-- /.dropdown-content, Navbar dropdowns -->
 
   <!-- .main-text -->
   <div class="main-text" id="main-text">
@@ -272,16 +283,17 @@
 
   </div><!-- /.main-text -->
 
-    <!-- .buttoncenter -->
+  <!-- .buttoncenter 
   <div class="buttoncenter">
     <a href="Energy0.1.html">
       <button class="button">
         <span>Next</span>
       </button>
     </a>
-  </div><!-- /.buttoncenter -->
+  </div> /.buttoncenter -->
 
 </div><!-- /.main-content -->
+
 
 </body>
 </html>
